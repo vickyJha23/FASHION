@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*::before, *::after, *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+html, body{
+      font-size: 16px;
+}
+body{
+     line-height: 1.5;
+     font-family: "Oswald", sans-serif;
+     background: #f1f5f9; 
+}
+ul{
+     list-style: none;
+}
+ a{
+     text-decoration: none;
+ }
+ h4{
+     font-size: 20px;
+ }
+.navbar{
+     width: 100%;
+     background-color: #000;
+     overflow: hidden;
+}
+.navigation-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.navigation-container .left{
+     display: flex;
+}
+.left a{
+     color: #fff;
+     padding: 8px 16px;
+     display: inline-block;
+}
+.left a:hover{
+     background: rgba(255, 255, 255, 0.5);
+}
+.right button{
+    border: none;
+    display: block;
+    background: inherit;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    outline: none;
+}
+.right button:hover{
+     background-color: rgba(255, 255, 255, 0.5);
+}
+.header{
+     padding: 48px 16px;
+}
+.tag{
+     background: #000;
+     padding: 0px 8px;
+     color: #fff;
+}
+#header{
+       position: relative;
+       color: #fff;
+}
+.header-detail{
+     position: absolute;
+     top: 50%;  
+     padding: 12px 24px;
+     transform: translate(0, -50%);
+}
+
+.header-detail button{
+       border: none;
+       outline: none;
+       background-color: #fff;
+       opacity: 0.4;
+       padding: 12px 24px;
+       font-size: 18px;
+}
+.header-detail button:hover{
+     background-color: #fff;
+     opacity: 1;
+}
+.image{
+     max-width: 100%;
+     height: auto;
+}
+#subscriber{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding-top: 100px;
+     z-index: 3;
+     overflow: hidden;
+     animation: opac 1s;
+     display: none;
+     user-select: none;
+}
+.show-subscriber{
+      display: block !important;
+}
+@keyframes opac {
+     0%{
+         opacity: 0;
+     }
+     100%{
+         opacity: 1;
+     }
+}
+
+.modal-content{
+      width: 900px;
+      margin: auto;
+      position: relative;
+      padding: 32px;
+}
+.times{
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: 2;
+     border: none;
+     background: transparent;
+     font-size: 30px;
+     padding: 12px 24px;
+     font-weight: bolder;
+}
+.times:hover{
+     background-color: #ccc;
+}
+input{
+     width: 100%;
+     padding: 8px;
+     border: none;
+     outline: none;
+     border: 1px solid #ccc;
+     margin-bottom: 15px;
+}
+.sub_btn{
+     width: 100%;
+     padding: 12px 24px;
+     border: none;
+     background-color: red;
+     color: #fff;
+     margin-bottom: 16px;
+}
+.sub_btn:hover{
+     background-color: aliceblue;
+     color: #000;
+}
+
+@media screen and (max-width: 600px){
+      .modal-content{
+         width: 600px;
+      } 
+      .hide-small{
+         display: none;
+      }  
+}
+
+.products{
+     padding: 8px 16px;
+     font-family: "Open Sans", sans-serif;
+}
+.product-item-1{
+      display: grid;
+      grid-template-areas: 'A A A A   A A A A  A B B B'
+                           'A A A A   A A A A  A C C C'
+                           'A A A A   A A A A  A D D D';
+                         
+      gap: 32px;
+}
+.about_hat{
+     grid-area: A;
+     overflow: hidden;
+}
+.about_me{
+     grid-area: B;
+     aspect-ratio: 1/ 0.95;
+}
+.popular_post{
+     grid-area: C;
+     aspect-ratio: 1/ 0.843;
+}
+
+.advertise{
+     grid-area: D;
+}
+
+.about_hat{
+     background: #fff;
+}
+.comments{
+     display: flex;
+     justify-content: space-between;
+     /* align-items: center; */
+}
+.comments button{
+     border: none;
+     background: transparent;   
+     border: 1px solid #ccc;
+     padding: 8px 16px;
+     font-weight: bold;
+}
+.comments .replies{
+     background-color: #000;
+     color: #fff;
+     text-transform: capitalize;
+     padding: 8px 16px;
+}
+.tag-2{
+     padding: 0 8px;
+     background-color: #fff;
+     color: #000;
+}
+.author-row{
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: 6px;
+ }
+ .author-col:first-child{
+     grid-column: 1 / span 1;
+ }
+ .author-col:last-child{
+     grid-column: 2 / span 10;
+ }
+ .about_me{
+      background: #fff;
+      /* font-family: "Oswald", sans-serif; */
+ }
+ .detail{
+     background-color: #000;
+     padding: 0.01rem 16px;
+     color: #fff;
+ }
+ .detail h4{
+     font-family: "Oswald", sans-serif;
+     font-size: 20px;
+ }
+ img{
+     vertical-align: middle;
+ }
+
+ .popular_post{
+     background: #fff;
+ }
+ .header_popular_post{
+     background-color: #000;
+     padding: 8px 16px;
+     color: #fff;
+ }
+ .header_popular_post h4{
+     font-family: "oswald", sans-serif;
+ }
+ .list{
+    margin: 0;
+    padding: 0;
+ }
+ .list li{
+    display:  flex;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+ }
+ .list li img{
+     width: 50px;
+     height: 50px;
+     margin-right: 16px;
+ }
+ .list li img + span{
+       display: flex;
+       flex-direction: column;
+ }
+.advertise{
+     background: #fff;
+     /* padding: 0.01rem 16px;     */
+}
+.header-advertise{
+     background-color: #000;
+     padding: 8px 16px;
+     color: #fff;
+}
+.header-advertise h4{
+     font-family: "oswald", sans-serif;
+}
+.advertise-container{
+     padding: 0.01rem 16px;
+     /* position: relative; */
+}
+.content{
+     width: 100%;
+     height: 260px;
+     background: #eee;
+     margin: 16px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#blog{
+      padding: 8px 16px;
+}
+.blog-content{
+     display: grid;
+     gap: 16px 32px;
+     font-family: "Open sans", sans-serif;
+     grid-template-areas: 'A A A A  A A A A  A B B B'
+                          'A A A A  A A A A  A C C C'
+                          'A A A A  A A A A  A D D D'
+                          'A A A A  A A A A  A E E E';
+}
+.blog-item-1{
+      /* grid-column: 1 / span 8;
+      grid-row: 1 / span 4; */
+      background-color: #fff;
+      padding: 12px 24px; 
+      grid-area: A;
+}
+.blog-item-2{
+      grid-area: B;
+      background-color: #fff;
+      aspect-ratio: 1 / 0.34;
+}
+.blog-item-3{
+       grid-area: C;
+       background-color: #fff;
+       aspect-ratio: 1 / 0.85;
+}
+.blog-item-4{
+     grid-area: D;
+     background-color: #fff;
+     /* padding: 8px 16px; */
+     aspect-ratio: 1/ 0.25;
+}
+.blog-item-5{
+      grid-area: E; 
+      background-color: #fff;
+      /* padding: 8px 16px; */
+}
+header{
+      background-color: #000;
+      color: #fff;
+      padding: 8px 16px;
+}
+.photos{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+}
+.blog-item-2 p{
+       padding: 0 8px;
+}
+.blog-item-2 p span{
+      background: #ccc;
+      margin-bottom: 16px;
+      color: #fff;
+      padding: 0 8px;
+      font-size: 14px;
+      display: inline-block;
+}
+.blog-item-2 p span:first-child{
+      background: #000;
+      font-size: 16px;
+}
+
+.blog-item-4 .socialmedia-container{
+      padding: 8px 16px;
+}
+.socialmedia-container i{
+      display: inline-block;
+      font-size: 24px;
+}
+.blog-item-5-content{
+    padding: 8px 16px;
+}
+.blog-item-5-content form input{
+      padding: 12px 8px !important;
+      font-size: 16px;
+}
+.blog-item-5-content form button{
+      width: 100%;
+      padding: 8px 16px;
+      background: red;
+      outline: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+}
+.blog-item-5-content form button:hover{
+      background: gray;
+      color: #fff;
+}
+.tag{
+      background: #fff;
+      color: #000;
+}
+.fashion{
+      padding: 8px 16px;
+      font-family: "Open sans", sans-serif;
+}
+.fashion-content{
+     margin: 16px; 
+     display: grid;
+     /* gap: 32px; */
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: auto auto;
+}
+
+.fashion-show-item-1{
+       background-color: #fff;
+       grid-column: 1 / span 8;
+       padding: 12px 24px;
+}
+.fashion-show-item-2{
+      grid-area: span 4;
+}
+
+.footer{
+      background: #333;
+      padding: 32px;
+}
+.footer-content{
+     padding: 8px;
+}
+.topBtn{
+      outline: none;
+      border: none;
+      background-color: #000;
+      /* color: #fff; */
+     padding: 8px 16px;
+}
+.topBtn a{
+      color: #fff;
+      text-transform: capitalize;
+      font-size: 16px;
+}
+.footer-content p{
+      color: #fff;
+      font-family: "Open sans", sans-serif;
+      font-size: 14px;
+      text-transform: capitalize;
+}
+.footer-content p a{
+       color: #fff;
+       text-decoration: underline;
+}
+
+@media screen and (max-width: 600px){
+      .product-item-1{
+            grid-template-areas: none;
+      }
+      .about_hat{
+           grid-area: auto;
+      }
+      .about_me{
+          grid-area: auto;
+      }
+      .popular_post{
+           grid-area: auto;
+      }
+      .advertise{
+           grid-area: auto;
+      }
+      .blog-content{
+           /* grid-template-columns: auto; */
+           grid-template-areas: none;
+      }
+      .blog-item-1{
+           grid-area: auto;
+      }
+      .blog-item-2{
+           grid-area: auto;
+      }
+      .blog-item-3{
+           grid-area: auto;
+      }
+      .blog-item-4{
+           grid-area: auto;
+      }
+      .blog-item-5{
+           grid-area: auto;
+      }
+      .fashion-content{
+           grid-template-columns: auto;
+           grid-template-areas: auto;
+      }
+}

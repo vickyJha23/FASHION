@@ -1,0 +1,55 @@
+.margin-10{
+     margin: 10px 0;
+}
+.margin-15{
+     margin: 15px 0;
+}
+.margin-16{
+     margin: 16px;
+}
+.padding-12-24{
+     padding: 12px 24px;
+}
+.letter-spacing{
+      letter-spacing: 5px;
+}
+.text_justify{
+     text-align: justify;   
+}
+.padding-8-16{
+     padding: 8px 16px;
+}
+.text_upper{
+     text-transform: uppercase;
+}
+.text_center{
+     text-align: center;
+}
+.main, .container{
+      max-width: 1500px;
+      margin: 0 auto;
+}
+.jumbo{
+     font-size: 64px;
+}
+.white{
+     background: #fff;
+}
+.card{
+     box-shadow: 0 0 5px 0 rgba(0,0,0,0.15), 0 0 5px 0 rgba(0,0,0,0.2);
+}
+.margin-30-15{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+hr{
+     border: none;
+     border: 1px solid #eee;
+     height: 0;
+     margin: 20px 0;
+     display: block;
+}
+.text_gray{
+      color: gray;
+}
